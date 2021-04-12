@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<SplitPane dividerPositions="0.2633928571428572" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Boundary.Videos">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #5D737E;">
+         <children>
+            <ScrollPane fx:id="videosScrollPane" fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" layoutY="178.0" prefHeight="619.0" prefWidth="312.0" vbarPolicy="ALWAYS">
+              <content>
+                <AnchorPane style="-fx-background-color: #5D737E;">
+                     <children>
+                        <VBox>
+                           <children>
+                              <AnchorPane layoutX="10.0" prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="206.0" fitWidth="269.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@../images/YOGA1.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="14.0" layoutY="14.0" prefHeight="206.0" prefWidth="269.0" style="-fx-border-color: white; -fx-border-width: 3px;" />
+                                    <Label fx:id="imageView1" layoutX="14.0" layoutY="14.0" onMouseClicked="#callVideoPlayer" opacity="0.5" prefHeight="206.0" prefWidth="269.0" style="-fx-background-color: white; -fx-border-color: white; -fx-border-width: 3px;" styleClass="yoga_hover" stylesheets="@../css/yoga.css" />
+                                    <Text fill="WHITE" layoutX="100.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VIDEO1" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="Arial" size="30.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="350.0" fitWidth="269.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@../images/YOGA2.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="14.0" layoutY="14.0" prefHeight="350.0" prefWidth="269.0" style="-fx-border-color: white; -fx-border-width: 3px;" />
+                                    <Label fx:id="imageView2" layoutX="14.0" layoutY="14.0" onMouseClicked="#callVideoPlayer" opacity="0.5" prefHeight="350.0" prefWidth="269.0" style="-fx-background-color: white;" styleClass="yoga_hover" stylesheets="@../css/yoga.css" />
+                                    <Text fill="WHITE" layoutX="100.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VIDEO2" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="Arial" size="30.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="206.0" fitWidth="269.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@../images/YOGA3.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="14.0" layoutY="14.0" prefHeight="206.0" prefWidth="269.0" style="-fx-border-color: white; -fx-border-width: 3px;" />
+                                    <Label fx:id="imageView3" layoutX="14.0" layoutY="14.0" onMouseClicked="#callVideoPlayer" opacity="0.5" prefHeight="206.0" prefWidth="269.0" style="-fx-background-color: white;" styleClass="yoga_hover" stylesheets="@../css/yoga.css" />
+                                    <Text fill="WHITE" layoutX="100.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VIDEO3" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="Arial" size="30.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="350.0" fitWidth="269.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@../images/YOGA4.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="14.0" layoutY="14.0" prefHeight="350.0" prefWidth="269.0" style="-fx-border-color: white; -fx-border-width: 3px;" />
+                                    <Label fx:id="imageView21" layoutX="14.0" layoutY="14.0" onMouseClicked="#callVideoPlayer" opacity="0.5" prefHeight="350.0" prefWidth="269.0" style="-fx-background-color: white;" styleClass="yoga_hover" stylesheets="@../css/yoga.css" />
+                                    <Text fill="WHITE" layoutX="100.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VIDEO4" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="Arial" size="30.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="206.0" fitWidth="269.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@../images/YOGA5.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="14.0" layoutY="14.0" prefHeight="206.0" prefWidth="269.0" style="-fx-border-color: white; -fx-border-width: 3px;" />
+                                    <Label fx:id="imageView31" layoutX="14.0" layoutY="14.0" onMouseClicked="#callVideoPlayer" opacity="0.5" prefHeight="206.0" prefWidth="269.0" style="-fx-background-color: white;" styleClass="yoga_hover" stylesheets="@../css/yoga.css" />
+                                    <Text fill="WHITE" layoutX="100.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VIDEO5" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="Arial" size="30.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </AnchorPane>
+                           </children></VBox>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+            <Separator prefHeight="0.0" prefWidth="317.0" />
+            <Label layoutX="74.0" layoutY="39.0" text="YOGA" textFill="WHITE">
+               <font>
+                  <Font name="Impact" size="81.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+    <AnchorPane fx:id="right_pane" minHeight="0.0" minWidth="0.0" prefHeight="397.0" prefWidth="473.0" style="-fx-background-image: image/1.jpg;">
+         <children>
+            <Pane layoutX="16.0" layoutY="67.0" prefHeight="279.0" prefWidth="403.0" style="-fx-background-radius: 10px; -fx-opacity: 60%; -fx-background-color: gray;">
+               <children>
+                  <ImageView fitHeight="919.0" fitWidth="1124.0" layoutX="-100.0" layoutY="-68.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/jannis-brandt-mmsQUgMLqUo-unsplash.jpg" />
+                     </image>
+                  </ImageView>
+                  <MediaView fx:id="video_player" fitHeight="619.0" fitWidth="1100.0" layoutX="25.0" onMouseClicked="#videoPlayerClick" />
+                  <Slider fx:id="sVol" layoutX="724.0" layoutY="480.0" minWidth="30.0" onMouseExited="#volDisappear" orientation="VERTICAL" prefHeight="171.0" prefWidth="44.0" value="50.0" visible="false" />
+                  <ProgressBar fx:id="sTime" layoutX="120.0" layoutY="650.0" prefHeight="47.0" prefWidth="571.0" progress="0.0" visible="false" />
+                  <ImageView fx:id="vol_icon" fitHeight="28.0" fitWidth="77.0" layoutX="730.0" layoutY="660.0" onMouseEntered="#volAppear" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@../images/vol.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="image_play" fitHeight="112.0" fitWidth="118.0" layoutX="350.0" layoutY="253.0" onMouseClicked="#buttonPlayClick" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@../images/play_video.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children></AnchorPane>
+  </items>
+</SplitPane>

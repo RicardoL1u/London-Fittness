@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.AmbientLight?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Boundary.BoundaryRegister">
+   <children>
+      <ImageView fitHeight="921.0" fitWidth="1300.0" layoutX="-2.0" layoutY="-40.0" opacity="0.85" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/thought-catalog-9aOswReDKPo-unsplash.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="156.0" layoutY="50.0" opacity="0.81" prefHeight="701.0" prefWidth="900.0" style="-fx-background-color: white; -fx-background-radius: 50px;" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="164.0" layoutY="25.0" prefHeight="155.0" prefWidth="484.0" text="Fitness Builder|" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="Bodoni MT" size="61.0" />
+         </font>
+      </Label>
+      <TextField fx:id="register_username" layoutX="534.0" layoutY="172.0" onInputMethodTextChanged="#detectRegUsername" onKeyTyped="#detectRegUsername" prefHeight="62.0" prefWidth="325.0" style="-fx-background-radius: 10px;">
+         <font>
+            <Font size="30.0" />
+         </font></TextField>
+      <TextField fx:id="register_password" accessibleRole="PASSWORD_FIELD" layoutX="534.0" layoutY="262.0" onInputMethodTextChanged="#detectRegPassword" onKeyTyped="#detectRegPassword" prefHeight="62.0" prefWidth="325.0" style="-fx-background-radius: 10px;">
+         <font>
+            <Font size="30.0" />
+         </font></TextField>
+      <Label contentDisplay="TOP" layoutX="329.0" layoutY="177.0" prefHeight="52.0" prefWidth="193.0" text="username:" textOverrun="CLIP">
+         <font>
+            <Font name="Book Antiqua Bold" size="39.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="TOP" layoutX="332.0" layoutY="270.0" prefHeight="49.0" prefWidth="193.0" text="password:" textOverrun="CLIP">
+         <font>
+            <Font name="Book Antiqua Bold" size="39.0" />
+         </font>
+      </Label>
+      <AmbientLight color="CHARTREUSE" lightOn="true" />
+      <Text fx:id="register_username_hint" fill="RED" layoutX="534.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter your username" visible="false" />
+      <Text fx:id="register_password_hint" fill="RED" layoutX="534.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter your password" visible="false" />
+      <Text fx:id="register_email_hint" fill="RED" layoutX="534.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter your email" visible="false" wrappingWidth="150.17578125" />
+      <Text fx:id="register_age_hint" fill="RED" layoutX="534.0" layoutY="517.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter your age" visible="false" wrappingWidth="154.53662109375" />
+      <Text fx:id="register_sex_hint" fill="RED" layoutX="534.0" layoutY="607.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please choose your gender" visible="false" />
+      <TextField fx:id="register_email" accessibleRole="PASSWORD_FIELD" layoutX="534.0" layoutY="350.0" onInputMethodTextChanged="#detectRegEmail" onKeyTyped="#detectRegEmail" prefHeight="62.0" prefWidth="325.0" style="-fx-background-radius: 10px;">
+         <font>
+            <Font size="30.0" />
+         </font></TextField>
+      <Label alignment="CENTER_RIGHT" contentDisplay="TOP" layoutX="392.0" layoutY="446.0" prefHeight="46.0" prefWidth="124.0" text="age:" textOverrun="CLIP">
+         <font>
+            <Font name="Book Antiqua Bold" size="39.0" />
+         </font>
+      </Label>
+      <TextField fx:id="register_age" accessibleRole="PASSWORD_FIELD" layoutX="534.0" layoutY="439.0" onInputMethodTextChanged="#detectRegAge" onKeyTyped="#detectRegAge" prefHeight="62.0" prefWidth="325.0" style="-fx-background-radius: 10px;">
+         <font>
+            <Font size="30.0" />
+         </font></TextField>
+      <Label alignment="CENTER_RIGHT" contentDisplay="TOP" layoutX="357.0" layoutY="535.0" prefHeight="49.0" prefWidth="159.0" text="gender:" textOverrun="CLIP">
+         <font>
+            <Font name="Book Antiqua Bold" size="39.0" />
+         </font>
+      </Label>
+      <Button id="register_button" fx:id="button_register" contentDisplay="CENTER" layoutX="723.0" layoutY="631.0" mnemonicParsing="false" onMouseClicked="#registerClick" prefHeight="77.0" prefWidth="301.0" style="-fx-background-color: transparent;" stylesheets="@../css/register.css" text="Register" textFill="#2c3e50">
+         <font>
+            <Font name="Bodoni MT" size="42.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="register_sex" layoutX="534.0" layoutY="529.0" prefHeight="62.0" prefWidth="325.0" style="-fx-background-radius: 10px; -fx-background-color: white; -fx-border-color: grey; -fx-border-radius: 10px;">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="male" />
+               <String fx:value="female" />
+               <String fx:value="unknown" />
+            </FXCollections>
+         </items>
+      </ComboBox>
+      <Text fx:id="email_invalid" fill="RED" layoutX="534.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your emal is invalid." visible="false" wrappingWidth="176.17578125" />
+      <Text fx:id="age_invalid" fill="RED" layoutX="534.0" layoutY="517.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your age should be numbers." visible="false" wrappingWidth="179.53662109375" />
+      <Text fx:id="username_invalid" fill="RED" layoutX="534.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Only numbers and letters." visible="false" wrappingWidth="176.17578125" />
+      <Text fx:id="password_invalid" fill="RED" layoutX="534.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Only numbers and letters." visible="false" wrappingWidth="176.17578125" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="570.0" layoutY="61.0" prefHeight="57.0" prefWidth="330.0" text="Success belongs to" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="Book Antiqua" size="30.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="550.0" layoutY="95.0" prefHeight="57.0" prefWidth="330.0" text="the persevering" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="Book Antiqua" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="button_register_return" fitHeight="95.0" fitWidth="76.0" layoutX="38.0" layoutY="29.0" onMouseClicked="#registerReturnClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/register_to_login.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER_RIGHT" contentDisplay="TOP" layoutX="390.0" layoutY="355.0" prefHeight="46.0" prefWidth="124.0" text="email:" textOverrun="CLIP">
+         <font>
+            <Font name="Book Antiqua Bold" size="39.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

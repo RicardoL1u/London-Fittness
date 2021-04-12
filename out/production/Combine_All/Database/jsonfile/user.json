@@ -1,0 +1,26 @@
+{
+	"Alice":{
+		"userName":"Alice",
+		"password":"1q2w3e",
+		"userID":"1q",
+		"email":"123qw@163.com",
+		"age":"16",
+		"sex":"0"
+	},
+	"Tom":{
+		"userName":"Tom",
+		"password":"1qwerr",
+		"userID":"2q",
+		"email":"tryqw@qq.com",
+		"age":"24",
+		"sex":"0"
+	},
+	"Monkey King":{
+		"userName":"Monkey King",
+		"password":"dntghh",
+		"userID":"C001",
+		"email":"dntg@163.com",
+		"age":"10",
+		"sex":"1"
+	}
+}

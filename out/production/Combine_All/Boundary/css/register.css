@@ -1,0 +1,9 @@
+#register_button {
+    -fx-border-radius: 40px;
+    -fx-background-insets: 0;
+    -fx-border-color: #2C3E50;
+    -fx-border-width: 3px;
+}
+#register_button:hover {
+    -fx-border-color: white;
+}

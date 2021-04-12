@@ -1,0 +1,6 @@
+.yoga_hover:hover {
+    -fx-opacity: 0%;
+}
+.vol_button {
+    -fx-background-image: url("../images/vol.png");
+}

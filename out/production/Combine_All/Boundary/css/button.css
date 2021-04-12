@@ -1,0 +1,40 @@
+#video_button{
+    -fx-background-color: orange;
+}
+#video_button:hover{
+    -fx-border-color: white;
+}
+#video_button:pressed{
+    -fx-background-color: derive(orange, -20%);
+}
+
+#button2{
+    -fx-background-color: orange;
+}
+#button2:hover{
+    -fx-border-color: white;
+}
+#button2:pressed{
+    -fx-background-color: derive(orange, -20%);
+}
+
+
+#button3{
+    -fx-background-color: orange;
+}
+#button3:hover{
+    -fx-border-color: white;
+}
+#button3:pressed{
+    -fx-background-color: derive(orange, -20%);
+}
+
+#button4{
+    -fx-background-color: orange;
+}
+#button4:hover{
+    -fx-border-color: white;
+}
+#button4:pressed{
+    -fx-background-color: derive(orange, -20%);
+}

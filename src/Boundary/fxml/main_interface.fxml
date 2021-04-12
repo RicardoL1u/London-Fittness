@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Boundary.MainInterface">
+   <children>
+      <ImageView fitHeight="916.0" fitWidth="403.0" layoutY="-4.0" opacity="0.81" pickOnBounds="true">
+         <image>
+            <Image url="@../images/1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="1294.0" fitWidth="870.0" layoutX="397.0" layoutY="-380.0" opacity="0.81" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/mae-mu-s6S8IgEN6-4-unsplash.jpg" />
+         </image>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <Label layoutX="544.0" layoutY="70.0" opacity="0.6" prefHeight="174.0" prefWidth="546.0" style="-fx-background-color: white; -fx-background-radius: 20px;" styleClass="fit_hover" stylesheets="@../css/main.css" />
+      <Label fx:id="fitness_builder" alignment="CENTER" layoutX="583.0" layoutY="108.0" prefHeight="97.0" prefWidth="469.0" styleClass="fit_text" stylesheets="@../css/main.css" text="Fitness Trainer" textFill="#d8872a">
+         <font>
+            <Font name="Impact" size="73.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="912.0" opacity="0.64" stroke="WHITE" strokeType="INSIDE" style="-fx-fill: #EC9505;" width="84.0" />
+      <Rectangle id="recorded_videos" arcHeight="5.0" arcWidth="5.0" fill="#eff1f3" height="78.0" layoutX="-1.0" layoutY="117.0" stroke="WHITE" strokeType="INSIDE" width="401.0" />
+      <Rectangle id="live_courses" arcHeight="5.0" arcWidth="5.0" fill="#dbd3d8" height="78.0" layoutX="-1.0" layoutY="194.0" stroke="WHITE" strokeType="INSIDE" width="401.0" />
+      <Rectangle id="personal_trainer" arcHeight="5.0" arcWidth="5.0" fill="#d8b4a0" height="78.0" layoutX="-1.0" layoutY="271.0" stroke="WHITE" strokeType="INSIDE" width="401.0" />
+      <Rectangle id="my_page" arcHeight="5.0" arcWidth="5.0" fill="#d77a61" height="78.0" layoutX="-2.0" layoutY="348.0" stroke="WHITE" strokeType="INSIDE" width="402.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#223843" height="120.0" layoutX="-2.0" stroke="WHITE" strokeType="INSIDE" width="402.0" />
+      <Label layoutX="118.0" layoutY="585.0" opacity="0.54" prefHeight="285.0" prefWidth="75.0" style="-fx-background-radius: 20px; -fx-background-color: white;" />
+      <ImageView fitHeight="64.0" fitWidth="61.0" layoutX="11.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8-video-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="64.0" fitWidth="61.0" layoutX="10.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8-live-photos-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="64.0" fitWidth="61.0" layoutX="10.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8-personal-trainer-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="64.0" fitWidth="61.0" layoutX="11.0" layoutY="354.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8-person-100.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="209.0" layoutY="632.0" opacity="0.54" prefHeight="236.0" prefWidth="75.0" style="-fx-background-radius: 20px; -fx-background-color: white;" />
+      <Label layoutX="300.0" layoutY="668.0" opacity="0.54" prefHeight="200.0" prefWidth="75.0" style="-fx-background-radius: 20px; -fx-background-color: white;" />
+      <ImageView fitHeight="64.0" fitWidth="61.0" layoutX="303.0" layoutY="601.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8-person-running-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="64.0" fitWidth="61.0" layoutX="122.0" layoutY="516.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8-trophy.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="64.0" fitWidth="61.0" layoutX="215.0" layoutY="566.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/2242116-200.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="102.0" layoutY="113.0" prefHeight="89.0" prefWidth="305.0" text="recorded videos">
+         <font>
+            <Font name="Modern No. 20" size="39.0" />
+         </font>
+      </Label>
+      <Label layoutX="102.0" layoutY="190.0" prefHeight="89.0" prefWidth="305.0" text="live courses">
+         <font>
+            <Font name="Modern No. 20" size="39.0" />
+         </font>
+      </Label>
+      <Label layoutX="103.0" layoutY="267.0" prefHeight="89.0" prefWidth="305.0" text="personal trainer">
+         <font>
+            <Font name="Modern No. 20" size="39.0" />
+         </font>
+      </Label>
+      <Label layoutX="103.0" layoutY="339.0" prefHeight="89.0" prefWidth="305.0" text="my page">
+         <font>
+            <Font name="Modern No. 20" size="39.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="36.0" layoutY="13.0" prefHeight="93.0" prefWidth="336.0" text="Alice" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT" size="80.0" />
+         </font>
+      </Label>
+      <Text fill="WHITE" layoutX="836.0" layoutY="623.0" strokeType="OUTSIDE" strokeWidth="0.0" text="“A bend in the road is not the end of the road… unless you fail to make the turn.”– Helen Keller" wrappingWidth="289.3333740234375">
+         <font>
+            <Font name="Baskerville Old Face" size="35.0" />
+         </font>
+      </Text>
+      <Label fx:id="video_button" layoutX="-1.0" layoutY="117.0" onMouseClicked="#videosClick" opacity="0.23" prefHeight="78.0" prefWidth="401.0" style="-fx-background-color: white;" styleClass="label_op" stylesheets="@../css/main.css" />
+      <Label fx:id="live_button" layoutX="-1.0" layoutY="194.0" onMouseClicked="#liveClick" opacity="0.23" prefHeight="78.0" prefWidth="401.0" style="-fx-background-color: white;" styleClass="label_op" stylesheets="@../css/main.css" />
+      <Label fx:id="personal_trainer_button" layoutX="-1.0" layoutY="271.0" onMouseClicked="#personalTrainerClick" opacity="0.23" prefHeight="78.0" prefWidth="401.0" style="-fx-background-color: white;" styleClass="label_op" stylesheets="@../css/main.css" />
+      <Label fx:id="my_page_button" layoutX="-2.0" layoutY="348.0" onMouseClicked="#myPageClick" opacity="0.23" prefHeight="78.0" prefWidth="401.0" style="-fx-background-color: white;" styleClass="label_op" stylesheets="@../css/main.css" />
+   </children>
+</AnchorPane>

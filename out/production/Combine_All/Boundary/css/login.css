@@ -1,0 +1,28 @@
+#login_pane {
+    -fx-background-color: #2C3E50;
+}
+#username:hover {
+    -fx-border-color: #6495ed;
+    -fx-border-radius: 10px;
+    -fx-border-width: 3px;
+}
+#password:hover {
+    -fx-border-color: #6495ed;
+    -fx-border-radius: 10px;
+    -fx-border-width: 3px;
+}
+#login_button {
+    -fx-background-color:#2C3E50;
+    -fx-background-radius:100px;
+}
+#login_button:hover {
+    -fx-border-color: white;
+    -fx-border-radius: 100px;
+    -fx-border-width: 2px;
+}
+#login_button:pressed {
+    -fx-border-color: white;
+    -fx-border-radius: 100px;
+    -fx-border-width: 2px;
+    -fx-background-color: derive(#2C3E50, 40%);
+}

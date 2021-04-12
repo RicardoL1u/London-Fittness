@@ -1,0 +1,10 @@
+.fit_hover:hover {
+    -fx-border-color:white;
+    -fx-border-width:1.5px;
+    -fx-opacity:10%;
+}
+
+.label_op:hover {
+    -fx-opacity: 0%;
+    -fx-border-color:black;
+}
